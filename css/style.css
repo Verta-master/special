@@ -701,6 +701,8 @@ button {
     margin-bottom: 65px;
   }
   .area {
+    background-image: url(../img/bg-icons.png), url(../img/bg-3.jpg);
+    background-repeat: no-repeat;
     background-position: top 280px left, top left;
   }
   .area__info ul li {
@@ -815,6 +817,10 @@ button {
   .area__close {
     top: 50px;
     right: 50px;
+  }
+  .area__subtitle {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media (max-width: 766px) {
