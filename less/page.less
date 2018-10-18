@@ -7,7 +7,7 @@
   background-color: #fff;
   background-image: url(../img/bg-1.jpg);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top left;
   background-size: 1445px 2424px;
   border-radius: 5px;
   overflow: hidden;
@@ -127,20 +127,41 @@
   font-weight: 700;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1445px) {
   .page {
     width: 90%;
+    padding-bottom: 250px;
   }
   .page__list {
     &::before {
       left: 50px;
+      bottom: -50px;
     }
     &::after {
       right: 50px;
+      bottom: -50px;
     }
   }
   .page__item:first-child::before {
-    left: -45px;
+    left: 50px;
+  }
+  .page__item {
+    padding-right: 20px;
+    
+    &:first-child {
+      padding-right: 0;
+    }
+    &:nth-child(n+2) {
+      margin-bottom: 95px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .page__item {
+    &:nth-child(n+2) {
+      margin-bottom: 85px;
+    }
   }
 }
 
@@ -152,12 +173,38 @@
   }
   .page__item {
     width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &:nth-child(n+1) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 80px;
+      padding-right: 0;
+      max-width: none;
+    }
   }
   .page__list {
     margin-top: 100px;
   }
   .page {
     padding-bottom: 100px;
+    background-image: url(../img/bg-2.jpg);
+    background-size: contain;
+    background-position: top center;
+  }
+  .page__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #76e6d0;
+  }
+  .page__info {
+    width: 70%;
   }
 }
 
@@ -170,11 +217,15 @@
     font-size: 30px;
   }
   .page__item {
-    padding-left: 20px;
-    padding-right: 20px;
+    display: block;
   }
   .page__img {
-    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .page__info {
+    width: 100%;
   }
 }
 
@@ -185,21 +236,9 @@
   }
   .page {
     padding-top: 100px;
+    padding-bottom: 0;
   }
   .page__list {
     margin-top: 50px;
-  }
-  .page__item {
-    display: block;
-  }
-  .page__img {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    padding-right: 0;
-    text-align: center;
-  }
-  .page__info {
-    width: 100%;
   }
 }
