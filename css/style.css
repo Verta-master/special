@@ -549,10 +549,10 @@ button {
   padding-top: 135px;
   padding-bottom: 185px;
   background-color: #fff;
-  background-image: url(../img/bg-icons.png), url(../img/bg-3.jpg);
+  background-image: url(../img/bg-main.jpg);
   background-repeat: no-repeat;
-  background-position: top 180px left, top left;
-  background-size: 1440px 1929px, 719px 719px;
+  background-position: top left;
+  background-size: 1440px 2110px;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -700,11 +700,11 @@ button {
   .page__item:nth-child(7) {
     margin-bottom: 65px;
   }
-  .area {
-    background-position: top 280px left, top left;
-  }
   .area__info ul li {
     margin-bottom: 10px;
+  }
+  .area__list {
+    margin-top: 175px;
   }
   .area__item {
     max-width: 50%;
@@ -779,8 +779,8 @@ button {
   .area {
     background-image: url(../img/bg-3.jpg);
     background-repeat: no-repeat;
-    background-position: top left, 0;
-    background-size: 500px 500px, 0;
+    background-position: top left;
+    background-size: 500px 500px;
   }
   .area__list {
     margin-top: 200px;
@@ -883,8 +883,10 @@ button {
   .area {
     width: 90%;
     padding-bottom: 100px;
-    background-size: 100% auto, 719px 719px;
-    background-position: top 250px left, top left;
+    background-size: 100% auto;
+  }
+  .area__list {
+    margin-top: 230px;
   }
   .area__item:first-child {
     margin-left: 450px;
