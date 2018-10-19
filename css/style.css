@@ -777,11 +777,9 @@ button {
     width: 70%;
   }
   .area {
-    background-image: none;
-    background-image: url(../img/bg-3.jpg);
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: 500px 500px;
+    background-image: url(../img/bg-2.jpg);
+    background-size: contain;
+    background-position: top center;
   }
   .area__list {
     margin-top: 200px;
