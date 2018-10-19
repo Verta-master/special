@@ -776,6 +776,50 @@ button {
   .page__info {
     width: 70%;
   }
+  .area {
+    background-image: url(../img/bg-3.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 500px 500px;
+  }
+  .area__list {
+    margin-top: 200px;
+  }
+  .area__item {
+    width: 90%;
+  }
+  .area__item:nth-child(n+1) {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    max-width: 100%;
+    text-align: left;
+  }
+  .area__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: #76e6d0;
+  }
+  .area__close {
+    top: 50px;
+    right: 50px;
+  }
+  .area__subtitle {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 @media (max-width: 766px) {
   .page__close {
@@ -860,51 +904,5 @@ button {
   }
   .area__item:nth-child(5) {
     margin-left: 300px;
-  }
-}
-@media (max-width: 1278px) and (min-width: 320px) {
-  .area {
-    background-image: url(../img/bg-3.jpg);
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: 500px 500px;
-  }
-  .area__list {
-    margin-top: 200px;
-  }
-  .area__item {
-    width: 90%;
-  }
-  .area__item:nth-child(n+1) {
-    position: static;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    max-width: 100%;
-    text-align: left;
-  }
-  .area__img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
-    border-radius: 50%;
-    background-color: #76e6d0;
-  }
-  .area__close {
-    top: 50px;
-    right: 50px;
-  }
-  .area__subtitle {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
